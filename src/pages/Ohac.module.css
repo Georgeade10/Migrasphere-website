@@ -1,0 +1,168 @@
+/* Default styles for all screen sizes */
+
+.containerOh {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/barcelona-building.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(162, 177, 196, 0.9);
+}
+
+.title {
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 46px;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.columns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+  z-index: 1;
+  width: 80%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.logo {
+  width: 316px;
+  height: 316px;
+}
+
+.button {
+  margin-top: 60px;
+}
+
+.paragraph {
+  text-align: left;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Media query for screens smaller than 786px */
+
+@media (max-width: 786px) {
+  .columns {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+  }
+  .column {
+    width: 100%;
+    text-align: center;
+  }
+  .logo {
+    width: 109px;
+    height: 119px;
+  }
+  .button {
+    margin-top: 40px;
+  }
+  .paragraph {
+    text-align: left;
+    padding: 30px;
+    color: white;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+  }
+}
+
+/* .containerOh {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/barcelona-building.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(162, 177, 196, 0.9);
+}
+.title {
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 46px;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+}
+.columns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+  z-index: 1;
+  width: 80%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.logo {
+  width: 316px;
+  height: 316px;
+}
+.button {
+  margin-top: 60px;
+}
+.paragraph {
+  text-align: left;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+}
+ */

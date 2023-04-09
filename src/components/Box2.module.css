@@ -1,0 +1,11 @@
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 415px;
+  height: 665px;
+}
+.box {
+  margin-bottom: -570px;
+}

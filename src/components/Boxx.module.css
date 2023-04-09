@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.arrowContainer {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  width: 232px;
+  height: 232px;
+}
+.arrowLeft {
+  transform: rotate(180deg);
+}
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 30px;
+}
+.boxNavigation {
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.boxNavigationLeft {
+  left: 0;
+}
+.boxNavigationRight {
+  right: 0;
+}
+.boxRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 80%;
+  position: relative;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  width: 315px;
+  height: 465px;
+  transition: transform 0.2s ease-in-out;
+}
+.boxTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #405578;
+}
+.boxList {
+  padding: 0;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.boxList li {
+  margin-bottom: 5px;
+  padding-left: 20px;
+  text-align: left;
+}
+.boxList li + li {
+  margin-top: 20px;
+}
+.boxButton {
+  background-color: #405578;
+  color: #fff;
+}
+.box:hover {
+  transform: scale(1.05);
+}
+.box:focus-within {
+  transform: scale(1.05);
+}
+
+/* New styles */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Added to make the background div relative */
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100vw;
+  background-image: url('../assets/barcelona-building.jpg');
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -1;
+  margin-top: 50%;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .arrow {
+    display: none;
+  }
+
+  .boxRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    width: 122px;
+    height: 208px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .boxTitle {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #405578;
+  }
+  .boxList {
+    padding: 0;
+    margin-bottom: 0px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .boxList li {
+    margin-bottom: 5px;
+    padding-left: 0px;
+    text-align: left;
+  }
+  .boxList li + li {
+    margin-top: 0px;
+  }
+  .boxButton {
+  }
+  .box:hover {
+    transform: scale(1.05);
+  }
+  .box:focus-within {
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,162 @@
+/* Header2.module.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logo img {
+  width: 156px;
+  height: 154px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 30px;
+}
+.menuList {
+  display: flex;
+  gap: 20px;
+  style: none;
+}
+
+.menuItem {
+  font-size: 20px;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.active {
+  color: #f00;
+  border-bottom: 2px solid #fff;
+}
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 736px) {
+  .header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    z-index: 100;
+  }
+
+  .logo img {
+    width: 46px;
+    height: 46px;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    animation: slide-in 0.5s ease-out;
+  }
+
+  .menu-mobile ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .menu-mobile ul li {
+    margin: 1rem 0;
+  }
+
+  .menu-mobile ul li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  .menu-mobile ul li a.active {
+    border-bottom: 2px solid #000;
+  }
+
+  .menu-mobile ul li a:hover {
+    color: #000;
+  }
+
+  .menu-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    display: block;
+    font-size: 2rem;
+    color: #000;
+    z-index: 100;
+  }
+
+  .menu-icon .fa-times {
+    display: none;
+  }
+
+  .menu-mobile.show {
+    animation: slide-out 0.5s ease-out;
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slide-out {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}

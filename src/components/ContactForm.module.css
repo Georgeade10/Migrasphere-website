@@ -1,0 +1,137 @@
+.contactForm {
+  background: #ffffff;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+}
+.contactFormContainer {
+  width: 80%;
+  margin: auto;
+}
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 95%;
+}
+.formCol {
+  width: 48%;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.input {
+  background: #405578;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: white;
+  height: 61px;
+  margin: 0 10px;
+}
+.textareaRow {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.textareaInput {
+  flex-basis: 100%;
+}
+.submitButton {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #405578;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 58px;
+  width: 282px;
+  fontsize: '24px';
+}
+
+@media only screen and (max-width: 768px) {
+  /* Contact Form Styles */
+  .contactForm {
+    background: #ffffff;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+    @media only screen and (min-width: 768px) {
+      padding: 40px;
+    }
+  }
+
+  .contactFormContainer {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .formRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @media only screen and (min-width: 768px) {
+      width: 95%;
+    }
+  }
+
+  .formCol {
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+      width: 48%;
+    }
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .input {
+    background: #405578;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: white;
+    height: 61px;
+  }
+
+  .textareaRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .textareaInput {
+    flex-basis: 100%;
+  }
+
+  .submitButton {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #405578;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}

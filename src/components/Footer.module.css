@@ -1,0 +1,43 @@
+.footer {
+  background-color: #405578;
+  width: 100vw;
+  height: 309px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.column {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center; /* new property */
+}
+
+.text {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    width: 100vw;
+  }
+  .column {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+.column {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center; /* new property */
+}
+
+.text {
+  color: white;
+}
