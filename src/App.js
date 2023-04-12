@@ -8,20 +8,22 @@ import Page2 from './pages/Page2';
 import Page3 from './pages/Page3';
 import Page4 from './pages/Page4';
 import Navbar from './components/Navbar/Navbar';
+import './index.css';
 
 function App() {
   return (
     <>
-      <Navbar />
-
-      <Home />
-      <Page1 />
-      <OverlaySection />
-      <Page2 />
-      <Page3 />
-      <Page4 />
-      <AboutUs />
-      <Footer />
+      <div className='app-container'>
+        <Navbar />
+        <Home />
+        <Page1 />
+        <OverlaySection />
+        <Page2 />
+        <Page3 />
+        <Page4 />
+        <AboutUs />
+        <Footer />
+      </div>
     </>
   );
 }

@@ -21,7 +21,7 @@ function HomePage(props) {
         style={{
           backgroundImage: `url(${mapImage})`,
           backgroundSize: 'cover',
-          height: '90vh',
+          height: '80vh',
         }}
       >
         <img

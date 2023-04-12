@@ -14,7 +14,7 @@
 .leftColumn {
   width: 50%;
   padding: 20px;
-  margin-left: 40px;
+  margin-left: 120px;
   margin-top: -150px;
 }
 .leftColumn2 {
@@ -35,10 +35,14 @@
   color: white;
   margin-top: -80px;
   margin-bottom: 80px;
-  font-size: 24px;
+  font-size: 18px;
+  width: 507px;
+  line-height: 25px;
 }
 .rightColumn {
-  width: 50%;
+  width: 38%;
+  margin-right: 30px;
+  margin-top: -0px;
 }
 .rightColumn2 {
   width: 50%;
@@ -119,8 +123,8 @@
   white-space: nowrap;
 }
 .migralogo {
-  margin-top: 250px;
-  margin-left: 250px;
+  margin-top: 170px;
+  margin-left: 170px;
 }
 @media screen and (max-width: 768px) {
   .HomePage {
