@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import Overlay from './Overlay';
 import data from '../Data/data';
@@ -62,11 +61,20 @@ const Boxx = () => {
                       <li key={index}>{listItem}</li>
                     ))}
                 </ul>
-                <Button_LearnMore
-                  className={styles.boxButton}
-                  onClick={() => handleItemClick(item)}
-                  text='Свяжись с нами'
-                />
+                {isMobile ? (
+                  <button
+                    className={styles.mobileButton}
+                    onClick={() => handleItemClick(item)}
+                  >
+                    Свяжись с нами
+                  </button>
+                ) : (
+                  <Button_LearnMore
+                    className={styles.boxButton}
+                    onClick={() => handleItemClick(item)}
+                    text='Свяжись с нами'
+                  />
+                )}
               </div>
             ))}
           </div>
@@ -78,8 +86,6 @@ const Boxx = () => {
         <div className={styles.arrowContainer}>
           <IoIosArrowForward onClick={handleNext} className={styles.arrow} />
         </div>
-        {/* Add comment line to indicate mobile breakpoint */}
-        {/* <div className={styles.background}></div> */}
       </div>
     </>
   );

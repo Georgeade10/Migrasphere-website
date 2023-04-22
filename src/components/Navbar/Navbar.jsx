@@ -83,6 +83,7 @@ const Navbar = () => {
                   duration={500}
                   spy={true}
                   offset={-60}
+                  onClick={() => setToggleMenu(false)}
                 >
                   Виды услуг
                 </Link>
@@ -94,6 +95,7 @@ const Navbar = () => {
                   duration={500}
                   spy={true}
                   offset={-60}
+                  onClick={() => setToggleMenu(false)}
                 >
                   О нас
                 </Link>
@@ -105,6 +107,7 @@ const Navbar = () => {
                   duration={500}
                   spy={true}
                   offset={-60}
+                  onClick={() => setToggleMenu(false)}
                 >
                   Контакты
                 </Link>
@@ -116,6 +119,7 @@ const Navbar = () => {
                   duration={500}
                   spy={true}
                   offset={-60}
+                  onClick={() => setToggleMenu(false)}
                 >
                   Наши партнеры
                 </Link>

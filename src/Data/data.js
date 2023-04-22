@@ -58,7 +58,7 @@ const data = [
   },
   {
     id: 4,
-    title: '',
+    title: 'Student “Standart”',
     items: [
       'Все услуги акета “Basic” ',
 
@@ -77,7 +77,7 @@ const data = [
   },
   {
     id: 5,
-    title: '',
+    title: 'Student “Standart”',
     items: [
       'Все услуги акета “Basic” ',
 
@@ -96,7 +96,7 @@ const data = [
   },
   {
     id: 6,
-    title: '',
+    title: 'Student “Standart”',
     items: [
       'Все услуги акета “Basic” ',
 

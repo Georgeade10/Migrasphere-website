@@ -115,6 +115,7 @@
   .container {
     width: 100vw;
     overflow: hidden;
+    box-sizing: border-box;
   }
   .arrow {
     display: none;
@@ -123,7 +124,7 @@
   .boxRow {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
     width: 80vw;
     margin: auto;
     position: relative;
@@ -140,8 +141,8 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     text-align: center;
-    width: 122px;
-    height: 208px;
+    width: 28vw;
+    height: 190px;
     transition: transform 0.2s ease-in-out;
   }
   .boxTitle {
@@ -165,6 +166,16 @@
     margin-top: 0px;
   }
   .boxButton {
+    width: 100px;
+    display: none;
+  }
+  .mobileButton {
+    width: 28vw;
+    height: 58px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    background: #405578;
   }
   .box:hover {
     transform: scale(1.05);
