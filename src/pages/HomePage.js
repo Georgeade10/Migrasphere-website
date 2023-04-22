@@ -16,21 +16,21 @@ function HomePage(props) {
         </p>
         <Button text='Свяжись с нами' className={style.HomePage__button} />
       </div>
-      <div
-        className={style.rightColumn}
-        style={{
-          backgroundImage: `url(${mapImage})`,
-          backgroundSize: 'cover',
-          height: '80vh',
-        }}
-      >
-        <img
-          src={imgLogo}
-          alt='migrasphere Logo'
-          width={306}
-          height={219}
-          className={style.migralogo}
-        />
+      <div className={style.rightColumn}>
+        <div className={style.imageContainer}>
+          <img
+            src={mapImage}
+            alt='Map of Migra Sphere'
+            className={style.mapImage}
+          />
+          <img
+            src={imgLogo}
+            alt='Migrasphere Logo'
+            width={280}
+            height={209}
+            className={style.imgLogo}
+          />
+        </div>
 
         <VerticalButton
           className={style.verticalButton}

@@ -8,7 +8,7 @@ function HomeSlide(props) {
   return (
     <div className={style.HomePage}>
       <div className={style.leftColumn2}>
-        <img src={mapImage} alt='' className={style.image} />
+        <img src={mapImage} alt='' className={style.image2} />
         <VerticalButton
           className={style.verticalButtonSlide}
           onClick={props.onClick}
